@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+ <PropertyGroup>
+ <TargetFramework>net6.0</TargetFramework>
+ <Nullable>enable</Nullable>
+ <ImplicitUsings>enable</ImplicitUsings>
+ <UserSecretsId>aspnet-SchoolRegister.Web-82602eed-22c9-4ce5-90a4-9fc2a377a8a2</UserSecretsId>
+ </PropertyGroup>
+ <ItemGroup>
+ <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.9" />
+ <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.9" />
+ <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.9" />
+ <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.9" />
+ <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.9" />
+ <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.9" />
+ </ItemGroup>
+ <ItemGroup>
+ <ProjectReference Include="..\SchoolRegister.Model\SchoolRegister.Model.csproj" />
+ <ProjectReference Include="..\SchoolRegister.DAL\SchoolRegister.DAL.csproj" />
+ <ProjectReference Include="..\SchoolRegister.ViewModels\SchoolRegister.ViewModels.csproj" />
+ <ProjectReference Include="..\SchoolRegister.Services\SchoolRegister.Services.csproj" />
+ </ItemGroup>
+ <ItemGroup>
+   <Content Update="Properties\launchSettings.json">
+     <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+     <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+   </Content>
+ </ItemGroup>
+</Project>
